@@ -11,3 +11,11 @@ two:
   description: MyText
   image_url: MyString
   price: 9.99
+
+art:
+  title:       Mr.President
+  description:
+    Barack Obama and Ed Markey walk into a bar and nothing happens.
+    Obama can’t decide what he wants, and Markey keeps saying I will  have what he is having.
+  price:       49.50
+  image_url:   obama_love.jpg

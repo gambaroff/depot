@@ -13,8 +13,11 @@
   }
 
   .list_image {
-    width:  60px;
-    height: 70px;
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
   }
 
   .list_description {

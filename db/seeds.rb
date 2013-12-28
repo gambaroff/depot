@@ -32,10 +32,9 @@ Product.create!(title: 'No Prescriptions',
         The black spot on the heart means so much more to me. 
         The continuity is broken a part of my heart is never
          going to be the same again. I used to think about it all 
-         the time when i lived in New York. Milton Glaser created a modified version to commemorate the attacks, 
+         the time when I lived in New York. Milton Glaser created a modified version to commemorate the attacks, 
         reading<em>I Love NY More Than Ever</em>with a little black spot on the
          heart symbolizing the World Trade Center site.
-        theoretical perspective (why to test) and from a practical perspective.
       </p>},
   image_url: 'nyilu.jpg',
   price: 34.95)
