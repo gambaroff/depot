@@ -1,14 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Depot</title>
+  <title>Art Depot</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body class='<%= controller.controller_name%>'>
-
-<%= yield %>
-
+  <div class="main">
+    <div id="tray" class="topbar">
+  	  <div class="fill">
+  	  	<div class="container">
+          <!-- Logo -->
+          <div class="brand">
+            <h1>Art Depot</h1>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-sm-5">
+        <!-- Navigation menu -->
+	      <div class="navi">
+		    <div id="ddtopmenubar" class="blackmenu">
+  		      <ul>
+  		        <li><%= link_to "Home", '#' %></li>
+  		        <li><%= link_to "Questions", '#' %></li>
+  		        <li><%= link_to "News", '#' %></li>
+  		        <li><%= link_to "Contact", '#' %>></li>
+  		      </ul>
+  	        </div>
+  	      </div>  
+  	    </div>
+  	  </div> 
+  	</div>   
+    <div class="container">
+      <div clas="shop-items">
+  	    <div class="row">
+          <div class="col-md-9 col-md-push-3">
+            <div class="row">
+              <div class="col-md-4 col-sm-4 col-xs-6">
+                <%= yield %>
+  	          </div>  
+  	        </div>
+  	      </div> 
+  	    </div> 
+  	  </div> 
+  	</div> 
+  </div> 
 </body>
 </html>
