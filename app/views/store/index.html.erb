@@ -9,8 +9,8 @@
     <%= image_tag(product.image_url) %>
     <h3><%= product.title %></h3>
     <%= sanitize(product.description) %>
-    <div class="price_line">
-      <span class="price"><%= product.price %></span>
+    <div class="item-price">
+      <span class="item-price"><%= number_to_currency(product.price) %></span>
     </div>
   </div>
 <% end %>
