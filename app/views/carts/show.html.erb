@@ -3,9 +3,19 @@
 <% end %>
 
 <h2>Your Pragmartistic Cart</h2>
-<ul>    
+<table class ="table-responsive">
   <% @cart.line_items.each do |item| %>
-    <li><%= item.quantity %> &times; <%= item.product.title %></li>
+    <tr>
+      <td><%= item.quantity %>&times;</td>
+      <td class="table"><%= item.product.title %></td>
+      <td class="table"><%= number_to_currency(item.total_price) %></td>
+    </tr>
   <% end %>
-</ul>
+
+  <tr class="view-cart">
+    <td colspan="2">Total</td>
+    <td class="input-group"><%= number_to_currency(@cart.total_price) %></td>
+  </tr>
+</table>
+<%= button_to 'Empty cart', @cart, method: :delete, data: { confirm: 'Are yousure?' }, class: "btn-blue" %>
 
