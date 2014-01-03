@@ -1,0 +1,15 @@
+@import "bootstrap";
+
+.store {  
+  /* An entry in the store catalog */
+  .entry {
+    overflow: visible;
+    margin-top: 1em;
+    border-bottom: 1px dotted #77d;
+    min-height: 100px;
+    h3 {
+      color: #227;
+    }
+  }  
+}
+

@@ -2,7 +2,7 @@
 <p id="notice"><%= notice %></p>
 <% end %>
  <div class="center hero-unit">
-   <h1>Your Pragmatic Artist Catalog</h1>
+   <h1>Your Pragmartist Catalog</h1>
  </div>
 <% cache ['store', Product.latest] do %>
   <% @products.each do |product| %>
@@ -11,8 +11,9 @@
         <%= image_tag(product.image_url) %>
 		<h3><%= product.title %></h3>
 		<%= sanitize(product.description) %>
-		<div class="item-price">
+		<div class="input-group-btn">
 		  <span class="item-price"><%= number_to_currency(product.price) %></span>
+		  <%= button_to 'Add to Cart', line_items_path(product_id: product), class: "btn-danger" %>
 		</div>
 	  </div>
 	<% end %>
