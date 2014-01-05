@@ -83,6 +83,7 @@ strong{
 
 .container{
    width:1050px;
+   margin:40 px;
 }
 
 .btn-blue{
@@ -128,7 +129,6 @@ logo {
   }
 }
 
-
 /* Navigation */ 
   
 .navi {
@@ -137,35 +137,6 @@ logo {
   padding-bottom:15px;
 }
 
-.mattblackmenu ul {
-  margin: 0px;
-  padding: 0px;
-  list-style-type: none;
-  border-bottom: none;
-  overflow: hidden;
-  background: transparent;
-}
-
-.mattblackmenu li a{
-  float: none;
-  display: inline-block;
-  text-decoration: none;
-  margin: 0px;
-  padding: 10px 12px;
-  border:0px;
-  color:#fff;
-  font-weight:normal;
-  background:transparent;
-   font-size:14px;
-   font-family: 'Open Sans', sans-serif !important;
-   font-weight:600;
-   &:hover{
-     background:transparent;
-   }
-   a.selected {
-    background: transparent;
-   }
-}
 /* Kart links */
 
 .kart-links{
@@ -339,3 +310,81 @@ img{
    text-align:center;
 }
 
+.view-cart img{
+   max-height:50px;
+   .input-group{
+   max-width:120px;
+   }
+}
+   
+.sidebar{
+   float: left;
+   background:#fff;
+   border:1px solid #e1e1e1;
+   margin-top:10px;
+   padding:10px 15px;
+   h4{
+     font-family:"Open Sans", sans-serif;
+     font-size:13px;
+     font-weight:bold;
+     color:#777;
+     line-height:18px;
+     margin-bottom:5px;
+     padding-bottom:10px;
+     text-transform:uppercase;
+     border-bottom:1px solid #eee;
+   }
+}
+  
+.clearfix{
+  clear: both;
+}
+
+/* Footer */
+
+.footer{
+   background:#333 url("footer-back.png") repeat;
+   border-top:3px solid #ddd; 
+   box-shadow:inset 0px 0px 3px #111;
+   color:#ccc;
+   font-size:14px;
+   line-height:25px;
+   padding:35px 0px 10px 0px;
+   a{
+     color:#eee;
+     text-decoration:none;
+     border-bottom:1px dotted #888;
+     &:hover{
+       color:#aaa;
+       text-decoration:none;
+       border:0px;
+     }
+   }
+   hr{
+     margin-top: 10px;
+     margin-bottom: 10px;
+     border-top: #000 1px solid;
+    border-bottom: #212121 1px solid;
+   } 
+}
+
+.color{
+   color:#16cbe6;
+}
+
+.store {
+  .entry {
+    overflow: visible;
+    margin-top: 1em;
+    border-bottom: 1px dotted #77d;
+    min-height: 100px;
+    h3 {
+      font-size: 120%;
+      font-family: sans-serif;
+      margin-left: 100px;
+      margin-top: 0;
+      margin-bottom: 2px;
+      color: #227;
+    }
+  }  
+}    
