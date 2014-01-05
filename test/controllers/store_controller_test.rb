@@ -5,9 +5,15 @@ class StoreControllerTest < ActionController::TestCase
     get :index
     assert_response :success
     assert_select '.navi #ddtopmenubar a', minimum: 4
-    assert_select '.row .entry', 3
+    assert_select '.store .entry', 3
     assert_select 'h3', 'Mr.President'
     assert_select '.item-price', /\$[,\d]+\.\d\d/
+  end
+  
+  test "markup needed for store.js.coffee is in place" do
+    get :index
+    assert_select '.store .entry > img', 3
+    assert_select '.entry input[type=submit]', 3
   end
 
 end
