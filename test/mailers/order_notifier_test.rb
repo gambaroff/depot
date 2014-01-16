@@ -6,7 +6,7 @@ class OrderNotifierTest < ActionMailer::TestCase
     assert_equal "Pragmartistic Store Order Confirmation", mail.subject
     assert_equal ["stephania@example.org"], mail.to
     assert_equal ["depot@example.com"], mail.from
-    assert_match /1 x  Mr.President/, mail.body.encoded
+    assert_match /1 x Mr.President/, mail.body.encoded
   end
 
   test "shipped" do
