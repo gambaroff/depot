@@ -334,6 +334,9 @@ img{
      text-transform:uppercase;
      border-bottom:1px solid #eee;
    }
+   .submit {
+      margin-left: 4em;
+    }
 }
   
 .clearfix{
@@ -388,3 +391,51 @@ img{
     }
   }  
 }    
+
+/* Checkout */
+
+.checkout h4{
+   font-family:"Open Sans", sans-serif;
+   font-weight:bold;
+   font-size:16px;
+   color:#777;
+   margin-bottom:8px;
+   padding-bottom:8px;
+   border-bottom:1px solid #eee;
+   }
+   form {
+     label {
+       width: 5em;
+       float: left;
+       text-align: right;
+       padding-top: 0.2em;
+       margin-right: 0.1em;
+       display: block;
+    }
+    select, textarea, input {
+      margin-left: 0.5em;
+    }
+    .submit {
+      margin-left: 4em;
+    }
+    br {
+      display: none
+    }
+}
+
+/* Page components*/
+
+.page-title{
+   margin:10px 0px;
+  i{
+    font-size:30px;
+   margin-right:5px;
+   }
+  h2{
+   font-size:35px;
+  }
+  small{
+    font-size:21px;
+    margin-left:5px;
+  }
+}  

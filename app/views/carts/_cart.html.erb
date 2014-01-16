@@ -2,7 +2,6 @@
 	<span class="glyphicon glyphicon-shopping-cart"></span> Your Pragmartistic Cart
 	<small></small>
 </h2>
-
 <table class="table table-hover">
 	<tr>
 		<th>Quantity</th>
@@ -16,6 +15,7 @@
 		<th><%= number_to_currency(@cart.total_price) %></th>
 	</tr> 
 </table>
-<%= button_to 'Empty cart', @cart, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn-blue" %>
+<%= button_to 'Chekout', new_order_path, method: :get, class: "btn btn-primary" %>
+<%= button_to 'Empty cart', @cart, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-info" %>
 	
 	
