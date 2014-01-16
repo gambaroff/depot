@@ -100,6 +100,7 @@ strong{
      font-size:13px;
    }
 }
+
 .input-group .btn{
    margin-top:0px !important;
 } 
@@ -332,13 +333,19 @@ img{
      margin-bottom:5px;
      padding-bottom:10px;
      text-transform:uppercase;
-     border-bottom:1px solid #eee;
+     border-bottom:1px solid #eee;  
    }
-   .submit {
-      margin-left: 4em;
-    }
+   #cart {
+     input {
+      width: 224px;
+      font-size: small;
+      }
+      .button_to  { 
+         padding: 1em 0em;
+      }  
+   }
 }
-  
+ 
 .clearfix{
   clear: both;
 }
