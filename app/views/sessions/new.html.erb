@@ -1,10 +1,9 @@
-<form class="form-horizontal" role="form">
-  <% if flash[:alert] %>
+<% if flash[:alert] %>
     <p id="notice"><%= flash[:alert] %></p>
   <% end %>
   <%= form_tag do %>
-    <fieldset>
-      <h2>Please Log In</h2>
+    <form class="form-horizontal" role="form">
+      <h1 class"hero">Please Log In</h1>
       <div class="form-group">
         <%= label_tag :name, 'Name:' %>
         <%= text_field_tag :name, params[:name] %>
@@ -14,8 +13,8 @@
         <%= password_field_tag :password, params[:password] %>
       </div>
       <div class="form-group">
-        <%= submit_tag "Login" %>
+        <%= submit_tag "Login", class: "btn btn-primary" %>
       </div>
-    </fieldset>
+    </form>
   <% end %>
-</form>
+
