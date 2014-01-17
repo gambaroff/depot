@@ -1,2 +1,2 @@
-This app is based on the depot app in Chapter 6,7,8,9,10,11 of "Agile Web Development with Rails4" 
+This app is based on the depot app in Chapter 6,7,8,9,10,11,12,13 of "Agile Web Development with Rails4" 
 by Sam Ruby, Dave Thomas an David Heinemeier Hansson | The Pragmatic Programmers http://pragprog.com/book/rails4/agile-web-development-with-rails-4
